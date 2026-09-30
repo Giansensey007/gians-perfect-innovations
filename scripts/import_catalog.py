@@ -194,7 +194,13 @@ def copy_images(zf: zipfile.ZipFile, folder: str, slug: str) -> list[dict[str, s
     dest_dir = ROOT / "public" / "media" / slug
     kept_renders: dict[str, bytes] = {}
     if dest_dir.exists():
-        for name in ("render-01.jpg", "render-02.jpg"):
+        for name in (
+            "photoreal-01.jpg",
+            "photoreal-02.jpg",
+            "render-01.jpg",
+            "render-02.jpg",
+            "use-03.jpg",
+        ):
             existing = dest_dir / name
             if existing.is_file():
                 kept_renders[name] = existing.read_bytes()
@@ -213,7 +219,7 @@ def copy_images(zf: zipfile.ZipFile, folder: str, slug: str) -> list[dict[str, s
         if len(matches) != 1:
             raise SystemExit(f"{folder}: expected one *{suffix}, found {matches}")
         jpg_name = public_name[:-4] + ".jpg" if public_name.endswith(".png") else public_name
-        if kind == "render" and jpg_name in kept_renders:
+        if jpg_name in kept_renders:
             public_name = jpg_name
             blob = kept_renders[jpg_name]
         else:
@@ -228,6 +234,17 @@ def copy_images(zf: zipfile.ZipFile, folder: str, slug: str) -> list[dict[str, s
                 "kind": kind,
             }
         )
+    if "use-03.jpg" in kept_renders:
+        (dest_dir / "use-03.jpg").write_bytes(kept_renders["use-03.jpg"])
+    for extra_name, extra_kind in (("use-03.jpg", "use"),):
+        extra = dest_dir / extra_name
+        if extra.is_file():
+            images.append(
+                {
+                    "src": f"/media/{slug}/{extra_name}",
+                    "kind": extra_kind,
+                }
+            )
     return images
 
 
@@ -286,6 +303,11 @@ def idea_from_json(record: dict, brief: dict) -> dict:
 def main() -> None:
     if not ZIP_PATH.is_file():
         raise SystemExit(f"Zip not found: {ZIP_PATH}")
+    old_by_slug = {}
+    old_path = ROOT / "data" / "catalog.json"
+    if old_path.exists():
+        for idea in json.loads(old_path.read_text()).get("ideas", []):
+            old_by_slug[idea["slug"]] = idea
     with zipfile.ZipFile(ZIP_PATH) as zf:
         batch_all = json.loads(zf.read("_meta/batch-all.json"))
         rich_rows = json.loads(zf.read("_meta/batch-002-ideas.json"))
@@ -310,6 +332,16 @@ def main() -> None:
                 label = "photograph"
                 index = image["src"].rsplit("-", 1)[-1].split(".")[0]
                 image["alt"] = f"{name}, {label} {index}"
+            previous = old_by_slug.get(slug, {})
+            previous_caps = {
+                img.get("src"): img.get("caption")
+                for img in previous.get("images") or []
+                if img.get("caption")
+            }
+            for image in images:
+                if image["src"] in previous_caps:
+                    image["caption"] = previous_caps[image["src"]]
+                    image["alt"] = previous_caps[image["src"]]
             ideas.append(
                 {
                     "nn": nn,
@@ -323,6 +355,12 @@ def main() -> None:
                     "upgrade": parsed.get("upgrade", ""),
                     "target": parsed.get("target", ""),
                     "whyNow": parsed.get("whyNow", ""),
+                    "whyPoints": previous.get("whyPoints")
+                    or [
+                        point
+                        for point in (rich_by_nn.get(nn, {}).get("why_bullets") or [])
+                        if point.lower() != "from abandoned patent"
+                    ],
                     "next": parsed.get("next", ""),
                     "claims": parsed.get("claims") or [],
                     "fto": parsed.get("fto", ""),

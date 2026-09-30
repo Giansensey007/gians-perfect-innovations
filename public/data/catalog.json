@@ -42,23 +42,40 @@
         {
           "src": "/media/auraclip-personal-air-monitor/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "AuraClip Personal Air Monitor, photograph 01"
+          "alt": "Clipped to a collar so you can wear the monitor",
+          "caption": "Clipped to a collar so you can wear the monitor"
         },
         {
           "src": "/media/auraclip-personal-air-monitor/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "AuraClip Personal Air Monitor, photograph 02"
+          "alt": "Clip, light ring, and port",
+          "caption": "Clip, light ring, and port"
         },
         {
           "src": "/media/auraclip-personal-air-monitor/render-01.jpg",
           "kind": "render",
-          "alt": "AuraClip Personal Air Monitor, photograph 01"
+          "alt": "On a jacket, out on the street",
+          "caption": "On a jacket, out on the street"
         },
         {
           "src": "/media/auraclip-personal-air-monitor/render-02.jpg",
           "kind": "render",
-          "alt": "AuraClip Personal Air Monitor, photograph 02"
+          "alt": "The same monitor on a bench",
+          "caption": "The same monitor on a bench"
+        },
+        {
+          "src": "/media/auraclip-personal-air-monitor/use-03.jpg",
+          "kind": "use",
+          "alt": "Clipped to a backpack strap",
+          "caption": "Clipped to a backpack strap"
         }
+      ],
+      "whyPoints": [
+        "Clip-on CO and PM2.5, not a lab brick",
+        "Color ring for live air quality",
+        "Phone exposure heatmap",
+        "Tool-free sensor swap",
+        "Commute, wildfire, and workshop use"
       ]
     },
     {
@@ -99,23 +116,39 @@
         {
           "src": "/media/heatfold-waste-heat-sticker/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "HeatFold Waste-Heat Sticker, photograph 01"
+          "alt": "Folded sticker on a warm laptop",
+          "caption": "Folded sticker on a warm laptop"
         },
         {
           "src": "/media/heatfold-waste-heat-sticker/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "HeatFold Waste-Heat Sticker, photograph 02"
+          "alt": "Same sticker on a warm pipe",
+          "caption": "Same sticker on a warm pipe"
         },
         {
           "src": "/media/heatfold-waste-heat-sticker/render-01.jpg",
           "kind": "render",
-          "alt": "HeatFold Waste-Heat Sticker, photograph 01"
+          "alt": "Accordion folds on the palm rest",
+          "caption": "Accordion folds on the palm rest"
         },
         {
           "src": "/media/heatfold-waste-heat-sticker/render-02.jpg",
           "kind": "render",
-          "alt": "HeatFold Waste-Heat Sticker, photograph 02"
+          "alt": "Wrapped on a hot pipe",
+          "caption": "Wrapped on a hot pipe"
+        },
+        {
+          "src": "/media/heatfold-waste-heat-sticker/use-03.jpg",
+          "kind": "use",
+          "alt": "Stuck to the side of a kettle",
+          "caption": "Stuck to the side of a kettle"
         }
+      ],
+      "whyPoints": [
+        "Peel-stick paper thermoelectric",
+        "Fold geometry is the power dial",
+        "Laptop, pipe, and kettle waste heat",
+        "Wakes a BLE beacon"
       ]
     },
     {
@@ -157,23 +190,39 @@
         {
           "src": "/media/dewbar-sanitized-air-water/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "DewBar Sanitized Air Water, photograph 01"
+          "alt": "Countertop unit filling a glass from the air",
+          "caption": "Countertop unit filling a glass from the air"
         },
         {
           "src": "/media/dewbar-sanitized-air-water/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "DewBar Sanitized Air Water, photograph 02"
+          "alt": "Spout and glass, up close",
+          "caption": "Spout and glass, up close"
         },
         {
           "src": "/media/dewbar-sanitized-air-water/render-01.jpg",
           "kind": "render",
-          "alt": "DewBar Sanitized Air Water, photograph 01"
+          "alt": "In a kitchen, making a glass of water",
+          "caption": "In a kitchen, making a glass of water"
         },
         {
           "src": "/media/dewbar-sanitized-air-water/render-02.jpg",
           "kind": "render",
-          "alt": "DewBar Sanitized Air Water, photograph 02"
+          "alt": "The dispense spout",
+          "caption": "The dispense spout"
+        },
+        {
+          "src": "/media/dewbar-sanitized-air-water/use-03.jpg",
+          "kind": "use",
+          "alt": "The machine with a finished glass beside it",
+          "caption": "The machine with a finished glass beside it"
         }
+      ],
+      "whyPoints": [
+        "Countertop humidity harvesting",
+        "Multi-tank heat sanitize",
+        "Cold faucet locks during sanitize",
+        "Quiet compressor and UV dispense"
       ]
     },
     {
@@ -215,23 +264,39 @@
         {
           "src": "/media/coolclamp-clip-on-body-cooler/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "CoolClamp Clip-On Body Cooler, photograph 01"
+          "alt": "Clamped to a collar, arm aimed at the neck",
+          "caption": "Clamped to a collar, arm aimed at the neck"
         },
         {
           "src": "/media/coolclamp-clip-on-body-cooler/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "CoolClamp Clip-On Body Cooler, photograph 02"
+          "alt": "Clamps, cooling pack, and fan",
+          "caption": "Clamps, cooling pack, and fan"
         },
         {
           "src": "/media/coolclamp-clip-on-body-cooler/render-01.jpg",
           "kind": "render",
-          "alt": "CoolClamp Clip-On Body Cooler, photograph 01"
+          "alt": "Worn at the collar",
+          "caption": "Worn at the collar"
         },
         {
           "src": "/media/coolclamp-clip-on-body-cooler/render-02.jpg",
           "kind": "render",
-          "alt": "CoolClamp Clip-On Body Cooler, photograph 02"
+          "alt": "The parts, laid out",
+          "caption": "The parts, laid out"
+        },
+        {
+          "src": "/media/coolclamp-clip-on-body-cooler/use-03.jpg",
+          "kind": "use",
+          "alt": "Clamped to a bag strap",
+          "caption": "Clamped to a bag strap"
         }
+      ],
+      "whyPoints": [
+        "Clamps to a collar, strap, or bag",
+        "Phase-change pack plus quiet fan",
+        "Arm aims air at the face",
+        "Hot-flash and sports use"
       ]
     },
     {
@@ -270,23 +335,39 @@
         {
           "src": "/media/ripplepod-solar-mosquito-agitator/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "RipplePod Solar Mosquito Agitator, photograph 01"
+          "alt": "Solar disc rippling a birdbath",
+          "caption": "Solar disc rippling a birdbath"
         },
         {
           "src": "/media/ripplepod-solar-mosquito-agitator/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "RipplePod Solar Mosquito Agitator, photograph 02"
+          "alt": "Three discs, each making its own ripples",
+          "caption": "Three discs, each making its own ripples"
         },
         {
           "src": "/media/ripplepod-solar-mosquito-agitator/render-01.jpg",
           "kind": "render",
-          "alt": "RipplePod Solar Mosquito Agitator, photograph 01"
+          "alt": "In a garden birdbath",
+          "caption": "In a garden birdbath"
         },
         {
           "src": "/media/ripplepod-solar-mosquito-agitator/render-02.jpg",
           "kind": "render",
-          "alt": "RipplePod Solar Mosquito Agitator, photograph 02"
+          "alt": "A small fleet on a pond",
+          "caption": "A small fleet on a pond"
+        },
+        {
+          "src": "/media/ripplepod-solar-mosquito-agitator/use-03.jpg",
+          "kind": "use",
+          "alt": "The same disc working in a vase",
+          "caption": "The same disc working in a vase"
         }
+      ],
+      "whyPoints": [
+        "Solar, no chemicals",
+        "Vase-to-pond sizes",
+        "Ripples stop mosquito breeding",
+        "Fleet map is the upgrade"
       ]
     },
     {
@@ -324,23 +405,39 @@
         {
           "src": "/media/paircharge-phone-to-phone-power/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "PairCharge Phone-to-Phone Power, photograph 01"
+          "alt": "Two cases sharing power, coil to coil",
+          "caption": "Two cases sharing power, coil to coil"
         },
         {
           "src": "/media/paircharge-phone-to-phone-power/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "PairCharge Phone-to-Phone Power, photograph 02"
+          "alt": "The coil pads where the phones meet",
+          "caption": "The coil pads where the phones meet"
         },
         {
           "src": "/media/paircharge-phone-to-phone-power/render-01.jpg",
           "kind": "render",
-          "alt": "PairCharge Phone-to-Phone Power, photograph 01"
+          "alt": "Held together to share a charge",
+          "caption": "Held together to share a charge"
         },
         {
           "src": "/media/paircharge-phone-to-phone-power/render-02.jpg",
           "kind": "render",
-          "alt": "PairCharge Phone-to-Phone Power, photograph 02"
+          "alt": "Pad-to-pad contact",
+          "caption": "Pad-to-pad contact"
+        },
+        {
+          "src": "/media/paircharge-phone-to-phone-power/use-03.jpg",
+          "kind": "use",
+          "alt": "One phone charging against the other on a table",
+          "caption": "One phone charging against the other on a table"
         }
+      ],
+      "whyPoints": [
+        "Bidirectional wireless share",
+        "Reserve-floor metering",
+        "Case form factor",
+        "Coil-to-coil between two phones"
       ]
     },
     {
@@ -378,23 +475,38 @@
         {
           "src": "/media/capbreeze-helmet-air-insert/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "CapBreeze Helmet Air Insert, photograph 01"
+          "alt": "Fan insert seated in a hard hat",
+          "caption": "Fan insert seated in a hard hat"
         },
         {
           "src": "/media/capbreeze-helmet-air-insert/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "CapBreeze Helmet Air Insert, photograph 02"
+          "alt": "The drop-in insert beside the hat",
+          "caption": "The drop-in insert beside the hat"
         },
         {
           "src": "/media/capbreeze-helmet-air-insert/render-01.jpg",
           "kind": "render",
-          "alt": "CapBreeze Helmet Air Insert, photograph 01"
+          "alt": "Installed in the hat",
+          "caption": "Installed in the hat"
         },
         {
           "src": "/media/capbreeze-helmet-air-insert/render-02.jpg",
           "kind": "render",
-          "alt": "CapBreeze Helmet Air Insert, photograph 02"
+          "alt": "Insert, fan, and USB-C port",
+          "caption": "Insert, fan, and USB-C port"
+        },
+        {
+          "src": "/media/capbreeze-helmet-air-insert/use-03.jpg",
+          "kind": "use",
+          "alt": "Worn in a hard hat, seen from behind",
+          "caption": "Worn in a hard hat, seen from behind"
         }
+      ],
+      "whyPoints": [
+        "Drops into any hard hat",
+        "USB-C quiet blower",
+        "Does not replace the helmet"
       ]
     },
     {
@@ -433,23 +545,33 @@
         {
           "src": "/media/trailcase-follow-luggage/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "TrailCase Follow Luggage, photograph 01"
+          "alt": "Carry-on rolling with the pull handle down",
+          "caption": "Carry-on rolling with the pull handle down"
         },
         {
           "src": "/media/trailcase-follow-luggage/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "TrailCase Follow Luggage, photograph 02"
+          "alt": "Two bags linked so they roll together",
+          "caption": "Two bags linked so they roll together"
         },
         {
           "src": "/media/trailcase-follow-luggage/render-01.jpg",
           "kind": "render",
-          "alt": "TrailCase Follow Luggage, photograph 01"
+          "alt": "In an airport, not being pulled by the handle",
+          "caption": "In an airport, not being pulled by the handle"
         },
         {
           "src": "/media/trailcase-follow-luggage/render-02.jpg",
           "kind": "render",
-          "alt": "TrailCase Follow Luggage, photograph 02"
+          "alt": "Wheel and the link between bags",
+          "caption": "Wheel and the link between bags"
         }
+      ],
+      "whyPoints": [
+        "Follows a phone fob",
+        "Pull handle stays down",
+        "Bags can link in a strip",
+        "Distance lock is the upgrade"
       ]
     },
     {
@@ -487,23 +609,39 @@
         {
           "src": "/media/zonevent-smart-hvac-vent/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "ZoneVent Smart HVAC Vent, photograph 01"
+          "alt": "The vent in the ceiling, not a tabletop box",
+          "caption": "The vent in the ceiling, not a tabletop box"
         },
         {
           "src": "/media/zonevent-smart-hvac-vent/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "ZoneVent Smart HVAC Vent, photograph 02"
+          "alt": "Fins tilted to steer the air",
+          "caption": "Fins tilted to steer the air"
         },
         {
           "src": "/media/zonevent-smart-hvac-vent/render-01.jpg",
           "kind": "render",
-          "alt": "ZoneVent Smart HVAC Vent, photograph 01"
+          "alt": "Installed in a living-room ceiling",
+          "caption": "Installed in a living-room ceiling"
         },
         {
           "src": "/media/zonevent-smart-hvac-vent/render-02.jpg",
           "kind": "render",
-          "alt": "ZoneVent Smart HVAC Vent, photograph 02"
+          "alt": "The fin pack up close",
+          "caption": "The fin pack up close"
+        },
+        {
+          "src": "/media/zonevent-smart-hvac-vent/use-03.jpg",
+          "kind": "use",
+          "alt": "Same vent in a bedroom ceiling",
+          "caption": "Same vent in a bedroom ceiling"
         }
+      ],
+      "whyPoints": [
+        "Drops into the existing ceiling vent",
+        "No thermostat replacement",
+        "Fins default open for safety",
+        "Room-by-room airflow"
       ]
     },
     {
@@ -542,23 +680,39 @@
         {
           "src": "/media/cartsolar-ev-roof-kit/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "CartSolar EV Roof Kit, photograph 01"
+          "alt": "Bolt-on solar roof on a golf cart",
+          "caption": "Bolt-on solar roof on a golf cart"
         },
         {
           "src": "/media/cartsolar-ev-roof-kit/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "CartSolar EV Roof Kit, photograph 02"
+          "alt": "Cells and the bolts that hold the roof",
+          "caption": "Cells and the bolts that hold the roof"
         },
         {
           "src": "/media/cartsolar-ev-roof-kit/render-01.jpg",
           "kind": "render",
-          "alt": "CartSolar EV Roof Kit, photograph 01"
+          "alt": "The cart in the sun",
+          "caption": "The cart in the sun"
         },
         {
           "src": "/media/cartsolar-ev-roof-kit/render-02.jpg",
           "kind": "render",
-          "alt": "CartSolar EV Roof Kit, photograph 02"
+          "alt": "The panel surface",
+          "caption": "The panel surface"
+        },
+        {
+          "src": "/media/cartsolar-ev-roof-kit/use-03.jpg",
+          "kind": "use",
+          "alt": "Side view of the roof while parked",
+          "caption": "Side view of the roof while parked"
         }
+      ],
+      "whyPoints": [
+        "Bolt-on solar roof",
+        "Float-charges while parked",
+        "Golf cart and light EV packs",
+        "Thin-film retrofit"
       ]
     },
     {
@@ -594,23 +748,39 @@
         {
           "src": "/media/canestraw-renewable-straws/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "CaneStraw Renewable Straws, photograph 01"
+          "alt": "One fiber straw in a cold drink",
+          "caption": "One fiber straw in a cold drink"
         },
         {
           "src": "/media/canestraw-renewable-straws/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "CaneStraw Renewable Straws, photograph 02"
+          "alt": "Bare straws, fiber ends visible",
+          "caption": "Bare straws, fiber ends visible"
         },
         {
           "src": "/media/canestraw-renewable-straws/render-01.jpg",
           "kind": "render",
-          "alt": "CaneStraw Renewable Straws, photograph 01"
+          "alt": "Paper straws, no plastic",
+          "caption": "Paper straws, no plastic"
         },
         {
           "src": "/media/canestraw-renewable-straws/render-02.jpg",
           "kind": "render",
-          "alt": "CaneStraw Renewable Straws, photograph 02"
+          "alt": "A loose bundle of the same straws",
+          "caption": "A loose bundle of the same straws"
+        },
+        {
+          "src": "/media/canestraw-renewable-straws/use-03.jpg",
+          "kind": "use",
+          "alt": "In a glass, in use",
+          "caption": "In a glass, in use"
         }
+      ],
+      "whyPoints": [
+        "Virgin bagasse, bamboo, or reed",
+        "No recycled-pulp BPA risk",
+        "Meant for cold drinks",
+        "Plastic-ban compliant"
       ]
     },
     {
@@ -648,23 +818,38 @@
         {
           "src": "/media/undershelf-fridge-bin/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "UnderShelf Fridge Bin, photograph 01"
+          "alt": "Bin hanging in the dead space under a shelf",
+          "caption": "Bin hanging in the dead space under a shelf"
         },
         {
           "src": "/media/undershelf-fridge-bin/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "UnderShelf Fridge Bin, photograph 02"
+          "alt": "Silicone rail gripping the glass shelf",
+          "caption": "Silicone rail gripping the glass shelf"
         },
         {
           "src": "/media/undershelf-fridge-bin/render-01.jpg",
           "kind": "render",
-          "alt": "UnderShelf Fridge Bin, photograph 01"
+          "alt": "Food stored under the shelf",
+          "caption": "Food stored under the shelf"
         },
         {
           "src": "/media/undershelf-fridge-bin/render-02.jpg",
           "kind": "render",
-          "alt": "UnderShelf Fridge Bin, photograph 02"
+          "alt": "How the rail clips on",
+          "caption": "How the rail clips on"
+        },
+        {
+          "src": "/media/undershelf-fridge-bin/use-03.jpg",
+          "kind": "use",
+          "alt": "Two bins on one shelf",
+          "caption": "Two bins on one shelf"
         }
+      ],
+      "whyPoints": [
+        "Hangs in dead space under the shelf",
+        "Silicone rail, no glue residue",
+        "Slide-in bins"
       ]
     },
     {
@@ -702,23 +887,38 @@
         {
           "src": "/media/airseed-curtain-harvester/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "AirSeed Curtain Harvester, photograph 01"
+          "alt": "Row machine with an air curtain, plants still upright",
+          "caption": "Row machine with an air curtain, plants still upright"
         },
         {
           "src": "/media/airseed-curtain-harvester/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "AirSeed Curtain Harvester, photograph 02"
+          "alt": "The air sheet passing over intact leaves",
+          "caption": "The air sheet passing over intact leaves"
         },
         {
           "src": "/media/airseed-curtain-harvester/render-01.jpg",
           "kind": "render",
-          "alt": "AirSeed Curtain Harvester, photograph 01"
+          "alt": "Straddling a crop row",
+          "caption": "Straddling a crop row"
         },
         {
           "src": "/media/airseed-curtain-harvester/render-02.jpg",
           "kind": "render",
-          "alt": "AirSeed Curtain Harvester, photograph 02"
+          "alt": "Nozzle over the leaves",
+          "caption": "Nozzle over the leaves"
+        },
+        {
+          "src": "/media/airseed-curtain-harvester/use-03.jpg",
+          "kind": "use",
+          "alt": "Side view, the row passing underneath",
+          "caption": "Side view, the row passing underneath"
         }
+      ],
+      "whyPoints": [
+        "Air curtain, plants stay upright",
+        "Takes mature seed, not the crop",
+        "Walk-behind row machine"
       ]
     },
     {
@@ -756,23 +956,38 @@
         {
           "src": "/media/twinpack-convertible-backpack/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "TwinPack Convertible Backpack, photograph 01"
+          "alt": "The pack split into two bags",
+          "caption": "The pack split into two bags"
         },
         {
           "src": "/media/twinpack-convertible-backpack/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "TwinPack Convertible Backpack, photograph 02"
+          "alt": "The halves coming apart",
+          "caption": "The halves coming apart"
         },
         {
           "src": "/media/twinpack-convertible-backpack/render-01.jpg",
           "kind": "render",
-          "alt": "TwinPack Convertible Backpack, photograph 01"
+          "alt": "Both halves on a bench",
+          "caption": "Both halves on a bench"
         },
         {
           "src": "/media/twinpack-convertible-backpack/render-02.jpg",
           "kind": "render",
-          "alt": "TwinPack Convertible Backpack, photograph 02"
+          "alt": "Zipped back into one pack",
+          "caption": "Zipped back into one pack"
+        },
+        {
+          "src": "/media/twinpack-convertible-backpack/use-03.jpg",
+          "kind": "use",
+          "alt": "Worn as a single pack, center zip visible",
+          "caption": "Worn as a single pack, center zip visible"
         }
+      ],
+      "whyPoints": [
+        "One pack splits into two bags",
+        "Zip joins them at the middle",
+        "Shared loads for two people"
       ]
     },
     {
@@ -809,23 +1024,38 @@
         {
           "src": "/media/clampbrella-hands-free-umbrella/photoreal-01.jpg",
           "kind": "photoreal",
-          "alt": "ClampBrella Hands-Free Umbrella, photograph 01"
+          "alt": "Clamp handle on a stroller, umbrella open",
+          "caption": "Clamp handle on a stroller, umbrella open"
         },
         {
           "src": "/media/clampbrella-hands-free-umbrella/photoreal-02.jpg",
           "kind": "photoreal",
-          "alt": "ClampBrella Hands-Free Umbrella, photograph 02"
+          "alt": "The clamp gripping a cart rail",
+          "caption": "The clamp gripping a cart rail"
         },
         {
           "src": "/media/clampbrella-hands-free-umbrella/render-01.jpg",
           "kind": "render",
-          "alt": "ClampBrella Hands-Free Umbrella, photograph 01"
+          "alt": "Hands-free in the rain",
+          "caption": "Hands-free in the rain"
         },
         {
           "src": "/media/clampbrella-hands-free-umbrella/render-02.jpg",
           "kind": "render",
-          "alt": "ClampBrella Hands-Free Umbrella, photograph 02"
+          "alt": "The spring clamp is the handle",
+          "caption": "The spring clamp is the handle"
+        },
+        {
+          "src": "/media/clampbrella-hands-free-umbrella/use-03.jpg",
+          "kind": "use",
+          "alt": "Clipped to the top of a car door",
+          "caption": "Clipped to the top of a car door"
         }
+      ],
+      "whyPoints": [
+        "The handle is the clamp",
+        "Stroller, cart, or car door",
+        "One-hand tilt"
       ]
     }
   ]

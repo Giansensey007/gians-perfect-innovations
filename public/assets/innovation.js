@@ -46,6 +46,9 @@
       return G.safeMedia(image.src);
     });
     const vt = "idea-" + String(idea.slug || "").replace(/[^a-z0-9-]/g, "");
+    const points = (idea.whyPoints || []).map(function (point) {
+      return "<li>" + G.escapeHtml(point) + "</li>";
+    }).join("");
     const claims = (idea.claims || []).map(function (claim) {
       return "<li>" + G.escapeHtml(claim) + "</li>";
     }).join("");
@@ -65,6 +68,7 @@
       "</div>" +
       '<div class="diashow">' +
       '<div class="photo-frame diashow-main"><img id="hero" alt="" style="view-transition-name:' + vt + '"></div>' +
+      '<p class="frame-caption" id="caption"></p>' +
       '<div class="diashow-bar"><span class="diashow-count" id="count"></span>' +
       '<span class="diashow-nav">' +
       '<button type="button" class="icon-btn" id="prev">Prev</button>' +
@@ -82,7 +86,9 @@
       (idea.pitch ? '<p class="lede">' + G.escapeHtml(idea.pitch) + "</p>" : "") +
       '<div class="split-notes">' +
       '<section class="note-block"><p class="kicker">Upgrade vs original</p><p>' + G.escapeHtml(idea.upgrade || "No upgrade notes.") + "</p></section>" +
-      '<section class="note-block"><p class="kicker">Why now</p><p>' + G.escapeHtml(idea.whyNow || "No timing notes.") + "</p></section>" +
+      '<section class="note-block"><p class="kicker">Why now</p><p>' + G.escapeHtml(idea.whyNow || "No timing notes.") + "</p>" +
+      (points ? "<ul>" + points + "</ul>" : "") +
+      "</section>" +
       "</div>" +
       '<section class="value-panel"><p class="kicker">Next build</p><p class="next-copy">' + G.escapeHtml(idea.next || "") + "</p></section>" +
       '<section class="section"><p class="kicker">Target user</p><p class="lede">' + G.escapeHtml(idea.target || "") + "</p></section>" +
@@ -115,8 +121,9 @@
       idx = (next + images.length) % images.length;
       const image = images[idx];
       hero.src = image.src;
-      hero.alt = image.alt || idea.name;
+      hero.alt = image.alt || image.caption || idea.name;
       count.textContent = pad(idx + 1) + " / " + pad(images.length);
+      document.getElementById("caption").textContent = image.caption || "";
       thumbButtons.forEach(function (button, index) {
         if (index === idx) button.setAttribute("aria-current", "true");
         else button.removeAttribute("aria-current");
