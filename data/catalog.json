@@ -1,0 +1,832 @@
+{
+  "title": "Gian's Perfect Innovations",
+  "source": "Abandoned US patent applications, batches 001-015",
+  "disclaimer": "These pages describe published US patent applications that were abandoned and never granted. They are concept revivals of those disclosures, not patents owned here, and not a freedom-to-operate opinion.",
+  "ideas": [
+    {
+      "nn": "01",
+      "slug": "auraclip-personal-air-monitor",
+      "name": "AuraClip Personal Air Monitor",
+      "short": "AuraClip",
+      "category": "climate / health",
+      "family": "climate",
+      "cardPitch": "Clip-on personal CO + PM2.5 monitor with BLE exposure maps.",
+      "pitch": "A clip-on personal air monitor that shows live CO and PM2.5 on-device and pushes exposure maps to your phone. Built for commute, wildfire season, and indoor workshops.",
+      "upgrade": "The abandoned core (US20150212057A1) already solved MCU-driven CO heater cycles plus pulsed PM sensing in a wearable shell with tool-free sensor swap. AuraClip keeps that sensing control loop, then adds BLE, modern low-power MEMS sensors, a color AQI ring, and a phone app that builds personal exposure heatmaps and alerts when you enter a bad pocket of air.",
+      "target": "City cyclists, parents in wildfire zones, HVAC techs, and anyone who wants personal AQI instead of a city-average number.",
+      "whyNow": "Wildfire smoke and urban PM are mainstream news. MEMS PM and electrochemical CO are cheap. Phones make maps trivial. The original packaging looked like a lab brick; a clip-on form factor with app UX fixes that.",
+      "next": "Bench prototype: ESP32-C3 + Plantower-class PM + electrochemical CO, heater duty cycle from the patent logic, BLE GATT to a Flutter app, 3D-printed clip enclosure.",
+      "claims": [
+        "Wearable housing with dual-line display of CO and PM.",
+        "Form factor meant to be worn or carried like a phone.",
+        "Microcontroller runs the CO sensor heating cycle.",
+        "Auto-calibration of the CO metal-oxide sensor in clean air.",
+        "Sampling + interpolation on the CO response curve to ppm.",
+        "Sampling + calculation for PM density (ug/m3) and AQI mapping.",
+        "Communication interface to external computer / smartphone / tablet.",
+        "Polymer casing with side opening for gas sensor and top opening for PM; sensors held by polymer clamps for tool-free swap."
+      ],
+      "fto": "Google Patents legal status: Abandoned - failure to respond to an office action. Individual inventor; no grant issued. US application rights appear free to practice for this published disclosure, subject to other patents in the field. Flag: freedom-to-operate still needs a sweep of later granted wearable AQI patents (e.g. modular / networked monitors). This is US-only application abandonment; check other jurisdictions if international filings exist (none found in the Google Patents family for this number).",
+      "patentNumber": "US20150212057A1",
+      "app": "US14/162,897",
+      "patentTitle": "Wearable Air Quality Monitor",
+      "inventor": "Peter Darveau",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2016-07-19 on Google Patents legal events)",
+      "filing": "2014-01-24",
+      "publication": "2015-07-30",
+      "abandonDate": "2016-07-19",
+      "patentUrl": "https://patents.google.com/patent/US20150212057A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150212057A1",
+      "images": [
+        {
+          "src": "/media/auraclip-personal-air-monitor/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "AuraClip Personal Air Monitor, photograph 01"
+        },
+        {
+          "src": "/media/auraclip-personal-air-monitor/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "AuraClip Personal Air Monitor, photograph 02"
+        },
+        {
+          "src": "/media/auraclip-personal-air-monitor/render-01.png",
+          "kind": "render",
+          "alt": "AuraClip Personal Air Monitor, concept sheet 01"
+        },
+        {
+          "src": "/media/auraclip-personal-air-monitor/render-02.png",
+          "kind": "render",
+          "alt": "AuraClip Personal Air Monitor, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "02",
+      "slug": "heatfold-waste-heat-sticker",
+      "name": "HeatFold Waste-Heat Sticker",
+      "short": "HeatFold",
+      "category": "consumer hardware / energy",
+      "family": "consumer",
+      "cardPitch": "Peel-stick foldable paper TEG that harvests waste heat for BLE beacons.",
+      "pitch": "A peel-and-stick, foldable paper thermoelectric sticker that turns phone, laptop, or kettle waste heat into microwatts for a BLE beacon or trickle charge. Fold geometry is the power dial",
+      "upgrade": "The abandoned KAUST filing (US20170244019A1) showed Bi2Te3 / Sb2Te3 thermocouples on paper, with origami / accordion folds to raise power density and temperature gradient. HeatFold productizes that into a consumer sticker: adhesive cold side, printable thermocouple traces, QR setup, and a tiny energy-harvesting PMIC that wakes a BLE tag. Target use is battery-free temperature logging on hot pipes, laptops, and food warmers",
+      "target": "IoT hardware startups, facilities teams (steam / HVAC), outdoor gear makers, and makers who want battery-free sensors",
+      "whyNow": "Ambient IoT and battery-free tags are real. Flexible TEG research matured. Paper / polymer substrates cut cost vs rigid BiTe modules. Consumers understand stickers; they do not understand lab TEGs",
+      "next": "Sputter or screen-print a 10-couple strip on polyester paper, accordion-fold to 4 layers, measure open-circuit voltage on a warm laptop chassis, wire to an LTC3108-class harvester + BLE beacon",
+      "claims": [
+        "Paper substrate with thermocouples in series between two contact points.",
+        "Substrate can be standard paper or polyester paper.",
+        "Each thermocouple is a pair of inorganic materials (exemplified Bi2Te3 and Sb2Te3).",
+        "Materials chosen by figure of merit ZT.",
+        "Deposition via PVD magnetron sputtering; contact pads join legs.",
+        "Folding (origami, accordion, fan) sets power density and max temperature gradient.",
+        "Fold can be changed later to retune power / gradient."
+      ],
+      "fto": "University US application abandoned for failure to respond to an office action. No US grant on this number. Flag: KAUST and related authors may hold related publications or non-US filings; check family and later flexible-TEG grants before commercial scale. Paper-substrate plus fold-to-tune remains a strong good-core, weak-packaging case.",
+      "patentNumber": "US20170244019A1",
+      "app": "US15/434,763",
+      "patentTitle": "Flexible and foldable paper-substrate thermoelectric generator (TEG)",
+      "inventor": "Jhonathan Prieto Rojas; Muhammad Mustafa Hussain",
+      "assignee": "King Abdullah University of Science and Technology (KAUST)",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2019-01-30)",
+      "filing": "2017-02-16",
+      "publication": "2017-08-24",
+      "abandonDate": "2019-01-30",
+      "patentUrl": "https://patents.google.com/patent/US20170244019A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170244019A1",
+      "images": [
+        {
+          "src": "/media/heatfold-waste-heat-sticker/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "HeatFold Waste-Heat Sticker, photograph 01"
+        },
+        {
+          "src": "/media/heatfold-waste-heat-sticker/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "HeatFold Waste-Heat Sticker, photograph 02"
+        },
+        {
+          "src": "/media/heatfold-waste-heat-sticker/render-01.png",
+          "kind": "render",
+          "alt": "HeatFold Waste-Heat Sticker, concept sheet 01"
+        },
+        {
+          "src": "/media/heatfold-waste-heat-sticker/render-02.png",
+          "kind": "render",
+          "alt": "HeatFold Waste-Heat Sticker, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "03",
+      "slug": "dewbar-sanitized-air-water",
+      "name": "DewBar Sanitized Air Water",
+      "short": "DewBar",
+      "category": "home / climate",
+      "family": "home",
+      "cardPitch": "Countertop air-to-water bar with multi-tank heat sanitize and scald lock.",
+      "pitch": "A countertop air-to-water bar that harvests humidity, heat-sanitizes the water in stages, and locks the cold faucet during sanitize so you cannot scald yourself. Hot and cold drinking water without bottles.",
+      "upgrade": "The abandoned core (US20160244951A1) already combined dehumidifier harvest, multi-tank heat kill steps (collection + cold + hot), ceramic filtration, and a safety lockout on the cold faucet during sanitize. DewBar keeps that safety-first water path, then modernizes packaging: quiet VFD compressor, UV at point of dispense, IoT filter-life and sanitize schedule, and a solar-assist option for off-grid cabins.",
+      "target": "Homes in humid climates with weak tap water trust, small offices, Airbnbs, and disaster-prep households.",
+      "whyNow": "Plastic water bottles are politically and brand-toxic. Point-of-use AWG is shipping again. The missing piece in many units is honest sanitization plus scald-safe UX - exactly what this abandoned design already solved.",
+      "next": "Breadboard control: Arduino/ESP control of heaters, solenoid lockout, and temp hold at 70-85 C for a timed sanitize cycle on a 5 L cold tank mockup. Validate kill-step timing, then design a quiet enclosure.",
+      "claims": [
+        "Dehumidifier harvests and condenses atmospheric vapor.",
+        "Collection tank receives condensate.",
+        "First heater kills bacteria in the collection tank.",
+        "Tube from collection to cold tank with in-line filter(s).",
+        "Second heater kills bacteria in the cold tank (periodic sanitize).",
+        "Tube from cold tank to hot tank enabling convective mixing.",
+        "Tubes to external faucet(s) for cold and hot dispense.",
+        "Also disclosed: solenoid lockout so cold faucet cannot dispense during high-temp sanitize; control board + temperature sensors; user display to schedule sanitize cycles."
+      ],
+      "fto": "Individual US application abandoned for failure to respond. No grant on this number. Flag: atmospheric water generator space is crowded with other patents (harvest hardware, membranes, etc.). The relatively distinctive piece here is multi-tank heat sanitization plus faucet lockout UX. FTO sweep required before productization; treat as inspiration plus a free published recipe, not a blank check.",
+      "patentNumber": "US20160244951A1",
+      "app": "US15/049,034",
+      "patentTitle": "Devices and methods for collecting, sanitizing, and dispensing condensed forms of atmospheric water",
+      "inventor": "George Yui",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2018-04-18)",
+      "filing": "2016-02-20",
+      "publication": "2016-08-25",
+      "abandonDate": "2018-04-18",
+      "patentUrl": "https://patents.google.com/patent/US20160244951A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160244951A1",
+      "images": [
+        {
+          "src": "/media/dewbar-sanitized-air-water/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "DewBar Sanitized Air Water, photograph 01"
+        },
+        {
+          "src": "/media/dewbar-sanitized-air-water/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "DewBar Sanitized Air Water, photograph 02"
+        },
+        {
+          "src": "/media/dewbar-sanitized-air-water/render-01.png",
+          "kind": "render",
+          "alt": "DewBar Sanitized Air Water, concept sheet 01"
+        },
+        {
+          "src": "/media/dewbar-sanitized-air-water/render-02.png",
+          "kind": "render",
+          "alt": "DewBar Sanitized Air Water, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "04",
+      "slug": "coolclamp-clip-on-body-cooler",
+      "name": "CoolClamp Clip-On Body Cooler",
+      "short": "CoolClamp",
+      "category": "health / consumer",
+      "family": "health",
+      "cardPitch": "Clamp-anywhere upper-body cooler with PCM pack and face-aim arm.",
+      "pitch": "A light upper-body cooler that clamps to a collar, strap, or bag and blows air across a phase-change pack. Built for hot flashes, outdoor sports, and crowded venues where you cannot carry a bulky vest.",
+      "upgrade": "The abandoned core (US20150374046A1) is a clamp-mountable upper-body cooler with ice-pack compartment, fan, vents, speed control, and an elbow-like adjustable arm that lifts cool air toward the face. CoolClamp keeps clamps + pack + directional arm, then upgrades ice to reusable PCM packs, swaps the motor for a quiet USB-C fan, adds soft textile sleeves for skin comfort, and splits SKUs for menopause relief vs sports day-use.",
+      "target": "People with menopause hot flashes, stadium / festival goers, outdoor workers, and e-bike riders in heat.",
+      "whyNow": "Personal cooling wearables are a growing category, but most are heavy vests or neck fans with no thermal mass. PCM packs plus clamp-anywhere mounting is a clearer product story than the original DIY-feeling ice unit.",
+      "next": "Sew or 3D-print a U-form shell with two spring clamps, a PCM pouch slot, and a 5V USB-C blower aimed at vent holes. Test face-directed arm geometry and wear time with one PCM pack.",
+      "claims": [
+        "Upper-body cooler mountable to clothing via support structure with pack compartment, battery power, and blower.",
+        "Ice pack as cooling source; frozen damp sponge listed as alternate.",
+        "Blower pushes air through pack compartment and out vents.",
+        "Adjustable control switches for on/off and speed.",
+        "Clamps on both ends to attach to clothes.",
+        "Adjustable arm moves up/down/side like an elbow to aim air at the face.",
+        "Can wear around neck/shoulders or drape over one shoulder; arm and pack can sit on opposite ends.",
+        "Can run as a plain fan without ice."
+      ],
+      "fto": "Individual filing abandoned for failure to respond. Core idea is simple and packaging-weak, which is exactly why it is a good upgrade candidate. Flag: personal cooling devices are common; uniqueness is clamp-anywhere + elbow aiming arm + pack compartment. Design around that, and run a quick FTO on neck fans and cooling scarves.",
+      "patentNumber": "US20150374046A1",
+      "app": "US14/545,094",
+      "patentTitle": "Upper body mounted cooling device",
+      "inventor": "Clyoni Peavy; Keoni Peavy",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2017-08-30)",
+      "filing": "2015-03-26",
+      "publication": "2015-12-31",
+      "abandonDate": "2017-08-30",
+      "patentUrl": "https://patents.google.com/patent/US20150374046A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150374046A1",
+      "images": [
+        {
+          "src": "/media/coolclamp-clip-on-body-cooler/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "CoolClamp Clip-On Body Cooler, photograph 01"
+        },
+        {
+          "src": "/media/coolclamp-clip-on-body-cooler/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "CoolClamp Clip-On Body Cooler, photograph 02"
+        },
+        {
+          "src": "/media/coolclamp-clip-on-body-cooler/render-01.png",
+          "kind": "render",
+          "alt": "CoolClamp Clip-On Body Cooler, concept sheet 01"
+        },
+        {
+          "src": "/media/coolclamp-clip-on-body-cooler/render-02.png",
+          "kind": "render",
+          "alt": "CoolClamp Clip-On Body Cooler, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "05",
+      "slug": "ripplepod-solar-mosquito-agitator",
+      "name": "RipplePod Solar Mosquito Agitator",
+      "short": "RipplePod",
+      "category": "climate / health",
+      "family": "climate",
+      "cardPitch": "Solar floating pod that ripples stagnant water to stop mosquito breeding.",
+      "pitch": "Solar floating pod that ripples stagnant water to stop mosquito breeding.",
+      "upgrade": "Keep solar vibration + bubble + paddle cores; add BLE mesh fleet map, dawn sensor, and tool-free snap hulls for vase to pond SKUs.",
+      "target": "Tropical households, resorts, municipalities fighting dengue and malaria without insecticides.",
+      "whyNow": "Climate expands mosquito range; chemical resistance rises; cheap solar + BLE make fleets of agitators practical.",
+      "next": "Injection-mold IP67 float with 1W panel, vibration motor, dusk sensor; pilot 50 units in birdbaths and rain jars.",
+      "claims": [
+        "Portable compact water agitator for freshwater/saltwater, tanks, vases, ponds, rain jars.",
+        "Surface agitation via vibration, paddling, or aerator bubbles.",
+        "Solar panels and/or backup batteries; timers; dawn-to-dusk sensors.",
+        "Plastic casing with appendages; optional chemical dispenser and remote control.",
+        "Targets mosquito breeding and related pests."
+      ],
+      "fto": "US-only individual app; never granted. Field has birdbath wigglers (Allied Precision) - design around vibrator geometry and solar float form. No later grant found in this family.",
+      "patentNumber": "US20170239630A1",
+      "app": "US15/418,724",
+      "patentTitle": "Compact Water Agitator for Pest Control",
+      "inventor": "Ananya Ashish Joshi",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2019-10-27)",
+      "filing": "2017-01-28",
+      "publication": "2017-08-24",
+      "abandonDate": "2019-10-27",
+      "patentUrl": "https://patents.google.com/patent/US20170239630A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170239630A1",
+      "images": [
+        {
+          "src": "/media/ripplepod-solar-mosquito-agitator/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "RipplePod Solar Mosquito Agitator, photograph 01"
+        },
+        {
+          "src": "/media/ripplepod-solar-mosquito-agitator/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "RipplePod Solar Mosquito Agitator, photograph 02"
+        },
+        {
+          "src": "/media/ripplepod-solar-mosquito-agitator/render-01.png",
+          "kind": "render",
+          "alt": "RipplePod Solar Mosquito Agitator, concept sheet 01"
+        },
+        {
+          "src": "/media/ripplepod-solar-mosquito-agitator/render-02.png",
+          "kind": "render",
+          "alt": "RipplePod Solar Mosquito Agitator, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "06",
+      "slug": "paircharge-phone-to-phone-power",
+      "name": "PairCharge Phone-to-Phone Power",
+      "short": "PairCharge",
+      "category": "consumer hardware / energy",
+      "family": "consumer",
+      "cardPitch": "Phone case that lets friends top each other up with metered inductive power share.",
+      "pitch": "Phone case that lets friends top each other up with metered inductive power share.",
+      "upgrade": "Keep bidirectional coil + reserve-floor logic; ship as MagSafe-class snap case with Qi reverse-charge negotiation UI and ledger of watts shared.",
+      "target": "Festival goers, travelers, teens who already reverse-charge by cable but want wireless and fair metering.",
+      "whyNow": "Reverse wireless charge is mainstream on flagships; social power-share UX is still missing.",
+      "next": "2x MagSafe-compatible cases with dual Tx/Rx coils, ESP32 BLE pairing app, reserve floor at 40%.",
+      "claims": [
+        "First and second mobile devices selectively transmit and receive battery power.",
+        "Coils send power via coupled inductors / magnetic field.",
+        "Manual or automatic start/stop; user parameters for battery floors, rate, time.",
+        "Applies to phones, tablets, cameras, handhelds."
+      ],
+      "fto": "Crowded wireless-power field (Qi, Samsung, Apple reverse charging). This specific bidirectional metering UI app is abandoned US-only. FTO sweep of later grants REQUIRED before build.",
+      "patentNumber": "US20160028269A1",
+      "app": "US14/808,284",
+      "patentTitle": "System for wireless exchange of power between mobile devices",
+      "inventor": "Eric Miller; Jonathan Globerson",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2017-10-17)",
+      "filing": "2015-07-24",
+      "publication": "2016-01-28",
+      "abandonDate": "2017-10-17",
+      "patentUrl": "https://patents.google.com/patent/US20160028269A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160028269A1",
+      "images": [
+        {
+          "src": "/media/paircharge-phone-to-phone-power/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "PairCharge Phone-to-Phone Power, photograph 01"
+        },
+        {
+          "src": "/media/paircharge-phone-to-phone-power/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "PairCharge Phone-to-Phone Power, photograph 02"
+        },
+        {
+          "src": "/media/paircharge-phone-to-phone-power/render-01.png",
+          "kind": "render",
+          "alt": "PairCharge Phone-to-Phone Power, concept sheet 01"
+        },
+        {
+          "src": "/media/paircharge-phone-to-phone-power/render-02.png",
+          "kind": "render",
+          "alt": "PairCharge Phone-to-Phone Power, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "07",
+      "slug": "capbreeze-helmet-air-insert",
+      "name": "CapBreeze Helmet Air Insert",
+      "short": "CapBreeze",
+      "category": "mobility / health / workplace",
+      "family": "mobility",
+      "cardPitch": "Drop-in USB-C fan insert that cools any hard hat or helmet.",
+      "pitch": "Drop-in USB-C fan insert that cools any hard hat or helmet.",
+      "upgrade": "Keep rigid frame + centered fan + hook-loop tabs; add USB-C PD cell, sweat sensor auto-speed, and ANSI-compatible low-profile SKU.",
+      "target": "Construction crews, firefighters, delivery cyclists, outdoor festival staff.",
+      "whyNow": "Heat stress rules tighten; quiet 5V blowers and Li-ion cells are cheap; clip-in beats buying a new helmet.",
+      "next": "3D-print frame for MSA/3M hard hats, 40mm blower, 2000mAh pack, workplace pilot with heat-index logging.",
+      "claims": [
+        "Rigid frame attachable inside hat/helmet with opening for airflow over head.",
+        "Fan attached to frame; switch and at least one battery.",
+        "Optional recharger plug.",
+        "At least three tabs with adhesive or hook-and-loop attachment."
+      ],
+      "fto": "Individual US app abandoned, no family grants found. Helmet cooling products exist - differentiate on universal insert + USB-C + sensor auto mode. Verify against later hard-hat cooling patents.",
+      "patentNumber": "US20150272251A1",
+      "app": "US14/242,187",
+      "patentTitle": "Insert device for air-cooling in hats and helmets",
+      "inventor": "James Neal Welsh",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2016-12-10)",
+      "filing": "2014-04-01",
+      "publication": "2015-10-01",
+      "abandonDate": "2016-12-10",
+      "patentUrl": "https://patents.google.com/patent/US20150272251A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150272251A1",
+      "images": [
+        {
+          "src": "/media/capbreeze-helmet-air-insert/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "CapBreeze Helmet Air Insert, photograph 01"
+        },
+        {
+          "src": "/media/capbreeze-helmet-air-insert/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "CapBreeze Helmet Air Insert, photograph 02"
+        },
+        {
+          "src": "/media/capbreeze-helmet-air-insert/render-01.png",
+          "kind": "render",
+          "alt": "CapBreeze Helmet Air Insert, concept sheet 01"
+        },
+        {
+          "src": "/media/capbreeze-helmet-air-insert/render-02.png",
+          "kind": "render",
+          "alt": "CapBreeze Helmet Air Insert, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "08",
+      "slug": "trailcase-follow-luggage",
+      "name": "TrailCase Follow Luggage",
+      "short": "TrailCase",
+      "category": "logistics / mobility",
+      "family": "logistics",
+      "cardPitch": "Carry-on that follows your phone fob at a set distance with piggyback connector strip.",
+      "pitch": "Carry-on that follows your phone fob at a set distance with piggyback connector strip.",
+      "upgrade": "Keep motorized wheels + wearable beacon + distance lock + multi-bag strip; add UWB ranging, airport-safe kill, and airline size SKU.",
+      "target": "Frequent flyers, parents with strollers, travelers with mobility limits.",
+      "whyNow": "UWB phones and cheap hub motors arrived; early follow-luggage brands failed on reliability - room for a safer reboot.",
+      "next": "Prototype carry-on shell with 4 hub motors, UWB tag, obstacle lidar lite, FAA battery docs.",
+      "claims": [
+        "Luggage with motorized wheels and activatable top sensor.",
+        "Wearable device (card/fob/phone) communicates with sensor.",
+        "On activation, motors drive luggage toward wearable.",
+        "PIR multi-zone detection; distance detection device for speed/direction.",
+        "Connector strip to piggyback extra bags; retractable wheels."
+      ],
+      "fto": "Crowded self-driving luggage field (Travelmate, Airwheel, etc.). This specific PIR+fob+connector-strip app is abandoned. FTO against later grants REQUIRED. Focus on connector strip + UWB safety UX.",
+      "patentNumber": "US20170049202A1",
+      "app": "US15/243,846",
+      "patentTitle": "Automatic Following Luggage System",
+      "inventor": "Edinaldo Nascimento",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2018-01-29)",
+      "filing": "2016-08-22",
+      "publication": "2017-02-23",
+      "abandonDate": "2018-01-29",
+      "patentUrl": "https://patents.google.com/patent/US20170049202A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20170049202A1",
+      "images": [
+        {
+          "src": "/media/trailcase-follow-luggage/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "TrailCase Follow Luggage, photograph 01"
+        },
+        {
+          "src": "/media/trailcase-follow-luggage/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "TrailCase Follow Luggage, photograph 02"
+        },
+        {
+          "src": "/media/trailcase-follow-luggage/render-01.png",
+          "kind": "render",
+          "alt": "TrailCase Follow Luggage, concept sheet 01"
+        },
+        {
+          "src": "/media/trailcase-follow-luggage/render-02.png",
+          "kind": "render",
+          "alt": "TrailCase Follow Luggage, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "09",
+      "slug": "zonevent-smart-hvac-vent",
+      "name": "ZoneVent Smart HVAC Vent",
+      "short": "ZoneVent",
+      "category": "home / energy / climate",
+      "family": "home",
+      "cardPitch": "Drop-in wireless vent fins that kill hot/cold rooms without replacing the thermostat.",
+      "pitch": "Drop-in wireless vent fins that kill hot/cold rooms without replacing the thermostat.",
+      "upgrade": "Keep hub + paired temp collectors + default-open safety; add Matter/Thread, pressure relief logic, and energy score app.",
+      "target": "Homeowners with uneven HVAC, landlords, small offices.",
+      "whyNow": "Matter standard unifies smart home; energy bills and heat waves push room-level control without full duct retrofit.",
+      "next": "ESP32-C6 vent actuator + 3 temp nodes, Matter bridge, A/B test vs Ecobee room sensors.",
+      "claims": [
+        "Automatic open/close/partial close of HVAC air vents.",
+        "Achieving desired temps per room/area on centralized HVAC.",
+        "Eliminating hot/cold zones.",
+        "Internet/WiFi control without replacing existing thermostat."
+      ],
+      "fto": "Smart-vent market active (Keen, Flair, etc.). This US app abandoned after assign to Red Dragon; claims are broad and weak. FTO against later grants REQUIRED. Compete on Matter + default-open safety belt drive.",
+      "patentNumber": "US20140312126A1",
+      "app": "US14/211,058",
+      "patentTitle": "Smart Vent System",
+      "inventor": "Purna Chander Ramini",
+      "assignee": "Red Dragon Innovations LLC (assignment; app abandoned)",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2017-11-27)",
+      "filing": "2014-03-14",
+      "publication": "2014-10-23",
+      "abandonDate": "2017-11-27",
+      "patentUrl": "https://patents.google.com/patent/US20140312126A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20140312126A1",
+      "images": [
+        {
+          "src": "/media/zonevent-smart-hvac-vent/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "ZoneVent Smart HVAC Vent, photograph 01"
+        },
+        {
+          "src": "/media/zonevent-smart-hvac-vent/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "ZoneVent Smart HVAC Vent, photograph 02"
+        },
+        {
+          "src": "/media/zonevent-smart-hvac-vent/render-01.png",
+          "kind": "render",
+          "alt": "ZoneVent Smart HVAC Vent, concept sheet 01"
+        },
+        {
+          "src": "/media/zonevent-smart-hvac-vent/render-02.png",
+          "kind": "render",
+          "alt": "ZoneVent Smart HVAC Vent, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "10",
+      "slug": "cartsolar-ev-roof-kit",
+      "name": "CartSolar EV Roof Kit",
+      "short": "CartSolar",
+      "category": "mobility / energy",
+      "family": "mobility",
+      "cardPitch": "Bolt-on solar roof that float-charges golf cart and light EV packs with live regen gauge.",
+      "pitch": "Bolt-on solar roof that float-charges golf cart and light EV packs with live regen gauge.",
+      "upgrade": "Keep continuous float converter + shunt gauge + fleet telemetry; add flexible thin-film panels, CAN bus adapter, and resort fleet dashboard.",
+      "target": "Golf resorts, campuses, last-mile delivery fleets with light EVs.",
+      "whyNow": "Thin-film and vehicle-integrated PV matured; fleet ops want idle-time charging without grid stalls.",
+      "next": "Fit flexible 200W roof to Club Car, step-up to 48V float, Bluetooth gauge app, 10-cart resort pilot.",
+      "claims": [
+        "Solar module + converter providing continuous power to battery pack.",
+        "Converter maps open-circuit PV voltage to predetermined float voltage.",
+        "Bypass circuit; shunt; gauge calculating operating conditions.",
+        "Non-linear PV I-V; remote device / server for fleet monitoring.",
+        "Method: continuous current even when instantaneous PV voltage is below peak."
+      ],
+      "fto": "Individual US app abandoned. Vehicle solar roofs common (Lightyear, Aptera, aftermarket). Differentiate on continuous float + shunt telemetry for golf/fleet carts. Sweep later EV solar grants.",
+      "patentNumber": "US20130335002A1",
+      "app": "US13/919,523",
+      "patentTitle": "Electric vehicle solar roof kit",
+      "inventor": "Sean Moore",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2016-08-17)",
+      "filing": "2013-06-17",
+      "publication": "2013-12-19",
+      "abandonDate": "2016-08-17",
+      "patentUrl": "https://patents.google.com/patent/US20130335002A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20130335002A1",
+      "images": [
+        {
+          "src": "/media/cartsolar-ev-roof-kit/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "CartSolar EV Roof Kit, photograph 01"
+        },
+        {
+          "src": "/media/cartsolar-ev-roof-kit/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "CartSolar EV Roof Kit, photograph 02"
+        },
+        {
+          "src": "/media/cartsolar-ev-roof-kit/render-01.png",
+          "kind": "render",
+          "alt": "CartSolar EV Roof Kit, concept sheet 01"
+        },
+        {
+          "src": "/media/cartsolar-ev-roof-kit/render-02.png",
+          "kind": "render",
+          "alt": "CartSolar EV Roof Kit, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "11",
+      "slug": "canestraw-renewable-straws",
+      "name": "CaneStraw Renewable Straws",
+      "short": "CaneStraw",
+      "category": "materials / consumer",
+      "family": "materials",
+      "cardPitch": "Virgin bagasse/bamboo/reed paper straws with no recycled pulp and no BPA risk.",
+      "pitch": "Virgin bagasse/bamboo/reed paper straws with no recycled pulp and no BPA risk.",
+      "upgrade": "Keep virgin rapidly-renewable pulp recipe excluding recycled stock; add heat-seal coating for iced drinks and branded FDA-ink sleeves.",
+      "target": "Cafes, airlines, stadiums under plastic-straw bans that still hate soggy paper.",
+      "whyNow": "Plastic bans stick; consumers reject soggy wood-pulp straws; bagasse supply from sugar mills is underused.",
+      "next": "Pilot 10k bagasse straws with food-contact coating, sogginess bench vs leading paper, cafe A/B.",
+      "claims": [
+        "Recyclable disposable biodegradable compostable paper straw of paperboard from rapidly renewable resources (bagasse, bamboo, reed or combo).",
+        "Excludes recycled materials and wood pulp."
+      ],
+      "fto": "Single claim, individual, abandoned. Compostable straw market crowded - IP value is the virgin-only / no-wood-pulp recipe angle. Verify coating chemistry vs later material patents.",
+      "patentNumber": "US20180235390A1",
+      "app": "US15/938,236",
+      "patentTitle": "Recyclable Compostable Disposable Straws Fabricated From Rapidly Renewable Resources",
+      "inventor": "Terry Lehmann",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2020-06-16)",
+      "filing": "2018-03-28",
+      "publication": "2018-08-23",
+      "abandonDate": "2020-06-16",
+      "patentUrl": "https://patents.google.com/patent/US20180235390A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180235390A1",
+      "images": [
+        {
+          "src": "/media/canestraw-renewable-straws/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "CaneStraw Renewable Straws, photograph 01"
+        },
+        {
+          "src": "/media/canestraw-renewable-straws/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "CaneStraw Renewable Straws, photograph 02"
+        },
+        {
+          "src": "/media/canestraw-renewable-straws/render-01.png",
+          "kind": "render",
+          "alt": "CaneStraw Renewable Straws, concept sheet 01"
+        },
+        {
+          "src": "/media/canestraw-renewable-straws/render-02.png",
+          "kind": "render",
+          "alt": "CaneStraw Renewable Straws, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "12",
+      "slug": "undershelf-fridge-bin",
+      "name": "UnderShelf Fridge Bin",
+      "short": "UnderShelf",
+      "category": "home / logistics",
+      "family": "home",
+      "cardPitch": "Silicone-stick rails that hang food bins under fridge shelves to reclaim dead space.",
+      "pitch": "Silicone-stick rails that hang food bins under fridge shelves to reclaim dead space.",
+      "upgrade": "Keep residue-free silicone pad + slide mating rails; add clear BPA-free bins, dishwasher SKU, and pantry/garage variants.",
+      "target": "Apartment dwellers with tiny fridges, meal-preppers, RV owners.",
+      "whyNow": "Urban kitchens shrink; organizers sell well on DTC; silicone pads beat glue residue.",
+      "next": "Tool silicone pad + ABS rail + 3 bin heights; Kickstarter fridge-fit kit.",
+      "claims": [
+        "Container with bottom and perimeter wall; access opening.",
+        "Receiving mount with upper wall and first mating member.",
+        "Second mating member on container releasably engages mount so upper wall sits over container.",
+        "Coupler on upper wall: residue-free silicone rubber pad adhering to shelf underside."
+      ],
+      "fto": "Individual abandoned US app; no family grants found. Under-shelf organizers exist - differentiate on residue-free silicone + slide mating. Low remaining family risk.",
+      "patentNumber": "US20180044062A1",
+      "app": "US15/234,791",
+      "patentTitle": "Storage container and mounting system",
+      "inventor": "Ronny Smith",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2019-07-08)",
+      "filing": "2016-08-11",
+      "publication": "2018-02-15",
+      "abandonDate": "2019-07-08",
+      "patentUrl": "https://patents.google.com/patent/US20180044062A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20180044062A1",
+      "images": [
+        {
+          "src": "/media/undershelf-fridge-bin/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "UnderShelf Fridge Bin, photograph 01"
+        },
+        {
+          "src": "/media/undershelf-fridge-bin/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "UnderShelf Fridge Bin, photograph 02"
+        },
+        {
+          "src": "/media/undershelf-fridge-bin/render-01.png",
+          "kind": "render",
+          "alt": "UnderShelf Fridge Bin, concept sheet 01"
+        },
+        {
+          "src": "/media/undershelf-fridge-bin/render-02.png",
+          "kind": "render",
+          "alt": "UnderShelf Fridge Bin, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "13",
+      "slug": "airseed-curtain-harvester",
+      "name": "AirSeed Curtain Harvester",
+      "short": "AirSeed",
+      "category": "agri / climate",
+      "family": "agri",
+      "cardPitch": "Row-straddle seed/insect harvester that uses a laminar air curtain so plants stay intact.",
+      "pitch": "Row-straddle seed/insect harvester that uses a laminar air curtain so plants stay intact.",
+      "upgrade": "Keep V-compressor + rake + air curtain troughs; add electric walk-behind SKU, seed maturity sensing, and organic insect-collect mode.",
+      "target": "Organic seed farms, prairie restoration crews, specialty lettuce seed growers.",
+      "whyNow": "Organic premiums and native-seed demand rise; chemical insect control faces bans; walk-behind EV tools proliferate.",
+      "next": "Build 1-row electric prototype with adjustable rake and dual trough fans; trial on lettuce seed rows.",
+      "claims": [
+        "Inverted V mechanical compressor straddling crop rows.",
+        "Compressor walls form/adjacent to seed troughs.",
+        "Rakes above compressor; troughs with upward mouths.",
+        "Powered fans around mouths generate air curtain directing seeds into troughs."
+      ],
+      "fto": "Individual abandoned US app; single independent claim. Agri harvester space has prior forced-air art - design around V-compressor + curtain geometry. Low family risk.",
+      "patentNumber": "US20190281763A1",
+      "app": "US16/297,591",
+      "patentTitle": "Air curtain harvester",
+      "inventor": "David Hammon",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2021-01-29)",
+      "filing": "2019-03-09",
+      "publication": "2019-09-19",
+      "abandonDate": "2021-01-29",
+      "patentUrl": "https://patents.google.com/patent/US20190281763A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20190281763A1",
+      "images": [
+        {
+          "src": "/media/airseed-curtain-harvester/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "AirSeed Curtain Harvester, photograph 01"
+        },
+        {
+          "src": "/media/airseed-curtain-harvester/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "AirSeed Curtain Harvester, photograph 02"
+        },
+        {
+          "src": "/media/airseed-curtain-harvester/render-01.png",
+          "kind": "render",
+          "alt": "AirSeed Curtain Harvester, concept sheet 01"
+        },
+        {
+          "src": "/media/airseed-curtain-harvester/render-02.png",
+          "kind": "render",
+          "alt": "AirSeed Curtain Harvester, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "14",
+      "slug": "twinpack-convertible-backpack",
+      "name": "TwinPack Convertible Backpack",
+      "short": "TwinPack",
+      "category": "consumer / logistics",
+      "family": "consumer",
+      "cardPitch": "Split backpack that unbuckles into two shoulder bags or zips a middle umbrella pocket.",
+      "pitch": "Split backpack that unbuckles into two shoulder bags or zips a middle umbrella pocket.",
+      "upgrade": "Keep dual-pocket buckle split + zipper third pocket; add laptop sleeve, RFID pocket, and recycled ripstop SKU.",
+      "target": "Students, couples traveling light, urban commuters who sometimes need one bag each.",
+      "whyNow": "Modular bags trend; shared mobility means couples split loads; DTC bag brands thrive.",
+      "next": "Sew prototype in recycled ripstop with Fidlock buckles, third-pocket umbrella sleeve, campus drop test.",
+      "claims": [
+        "Right and left pockets with outer zippers and shoulder straps.",
+        "Inner edges connected by spaced buckle male/female pairs.",
+        "Convertible to single-pocket by unbuckling.",
+        "Alternate: zipper between pockets pulls to form middle third pocket."
+      ],
+      "fto": "Individual abandoned US app. Modular backpacks common - focus on buckle-split + formed middle pocket combo. Low family risk.",
+      "patentNumber": "US20150366332A1",
+      "app": "US14/120,732",
+      "patentTitle": "Convertible backpack",
+      "inventor": "Sammy Black Marji",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2018-04-04)",
+      "filing": "2014-06-23",
+      "publication": "2015-12-24",
+      "abandonDate": "2018-04-04",
+      "patentUrl": "https://patents.google.com/patent/US20150366332A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20150366332A1",
+      "images": [
+        {
+          "src": "/media/twinpack-convertible-backpack/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "TwinPack Convertible Backpack, photograph 01"
+        },
+        {
+          "src": "/media/twinpack-convertible-backpack/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "TwinPack Convertible Backpack, photograph 02"
+        },
+        {
+          "src": "/media/twinpack-convertible-backpack/render-01.png",
+          "kind": "render",
+          "alt": "TwinPack Convertible Backpack, concept sheet 01"
+        },
+        {
+          "src": "/media/twinpack-convertible-backpack/render-02.png",
+          "kind": "render",
+          "alt": "TwinPack Convertible Backpack, concept sheet 02"
+        }
+      ]
+    },
+    {
+      "nn": "15",
+      "slug": "clampbrella-hands-free-umbrella",
+      "name": "ClampBrella Hands-Free Umbrella",
+      "short": "ClampBrella",
+      "category": "consumer / home / mobility",
+      "family": "consumer",
+      "cardPitch": "Umbrella whose handle is a spring clamp that clips to strollers, carts, and car doors.",
+      "pitch": "Umbrella whose handle is a spring clamp that clips to strollers, carts, and car doors.",
+      "upgrade": "Keep spring clamp handle + pivot tilt + finger grooves; add one-hand release, UV fabric SKU, and stroller/cart jaw inserts.",
+      "target": "Parents with strollers, grocery shoppers, field workers loading vehicles in rain.",
+      "whyNow": "Hands-free parenting gear sells; separate umbrella mounts are fiddly - integrated clamp handle wins.",
+      "next": "SLA print clamp handle on telescoping shaft, jaw inserts for tube vs flat, wet-weather parent walk test.",
+      "claims": [
+        "Shaft with collapsible dome.",
+        "Handle of two hinged spring-loaded clamp members with finger grooves and slip-resistant polymer inner surfaces.",
+        "Hinge release tabs; pivot joint above hinge to tilt shaft relative to handle."
+      ],
+      "fto": "Individual abandoned US app. Clamp-on umbrella holders exist as separate mounts - integrated handle claim is the angle. Sweep later clamp-umbrella grants before tooling.",
+      "patentNumber": "US20160213108A1",
+      "app": "US15/004,765",
+      "patentTitle": "Clamp umbrella",
+      "inventor": "Robyn Isom",
+      "assignee": "Individual",
+      "status": "Abandoned - FAILURE TO RESPOND TO AN OFFICE ACTION (recorded 2017-03-27)",
+      "filing": "2016-01-22",
+      "publication": "2016-07-28",
+      "abandonDate": "2017-03-27",
+      "patentUrl": "https://patents.google.com/patent/US20160213108A1/en",
+      "espacenetUrl": "https://worldwide.espacenet.com/patent/search?q=pn%3DUS20160213108A1",
+      "images": [
+        {
+          "src": "/media/clampbrella-hands-free-umbrella/photoreal-01.jpg",
+          "kind": "photoreal",
+          "alt": "ClampBrella Hands-Free Umbrella, photograph 01"
+        },
+        {
+          "src": "/media/clampbrella-hands-free-umbrella/photoreal-02.jpg",
+          "kind": "photoreal",
+          "alt": "ClampBrella Hands-Free Umbrella, photograph 02"
+        },
+        {
+          "src": "/media/clampbrella-hands-free-umbrella/render-01.png",
+          "kind": "render",
+          "alt": "ClampBrella Hands-Free Umbrella, concept sheet 01"
+        },
+        {
+          "src": "/media/clampbrella-hands-free-umbrella/render-02.png",
+          "kind": "render",
+          "alt": "ClampBrella Hands-Free Umbrella, concept sheet 02"
+        }
+      ]
+    }
+  ]
+}

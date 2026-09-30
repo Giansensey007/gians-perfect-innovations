@@ -1,0 +1,15 @@
+{
+  "name": "gians-perfect-innovations",
+  "private": true,
+  "scripts": {
+    "import": "python3 scripts/import_catalog.py",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260926.1",
+    "typescript": "^5.9.2",
+    "wrangler": "^4.40.0"
+  }
+}
