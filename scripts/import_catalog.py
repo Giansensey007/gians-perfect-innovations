@@ -192,7 +192,12 @@ def folder_for(zf: zipfile.ZipFile, nn: str) -> str:
 
 def copy_images(zf: zipfile.ZipFile, folder: str, slug: str) -> list[dict[str, str]]:
     dest_dir = ROOT / "public" / "media" / slug
+    kept_renders: dict[str, bytes] = {}
     if dest_dir.exists():
+        for name in ("render-01.jpg", "render-02.jpg"):
+            existing = dest_dir / name
+            if existing.is_file():
+                kept_renders[name] = existing.read_bytes()
         shutil.rmtree(dest_dir)
     dest_dir.mkdir(parents=True)
     names = [n for n in zf.namelist() if n.startswith(folder + "/")]
@@ -207,10 +212,15 @@ def copy_images(zf: zipfile.ZipFile, folder: str, slug: str) -> list[dict[str, s
         matches = [n for n in names if Path(n).name.endswith(suffix)]
         if len(matches) != 1:
             raise SystemExit(f"{folder}: expected one *{suffix}, found {matches}")
-        blob = zf.read(matches[0])
-        # Several "png" photoreal files are JPEG data. Serve them with a matching extension.
-        if blob.startswith(b"\xff\xd8\xff") and public_name.endswith(".png"):
-            public_name = public_name[:-4] + ".jpg"
+        jpg_name = public_name[:-4] + ".jpg" if public_name.endswith(".png") else public_name
+        if kind == "render" and jpg_name in kept_renders:
+            public_name = jpg_name
+            blob = kept_renders[jpg_name]
+        else:
+            blob = zf.read(matches[0])
+            # Several "png" photoreal files are JPEG data. Serve them with a matching extension.
+            if blob.startswith(b"\xff\xd8\xff") and public_name.endswith(".png"):
+                public_name = public_name[:-4] + ".jpg"
         (dest_dir / public_name).write_bytes(blob)
         images.append(
             {
@@ -297,7 +307,7 @@ def main() -> None:
             images = copy_images(zf, folder, slug)
             name = brief["name"]
             for image in images:
-                label = "photograph" if image["kind"] == "photoreal" else "concept sheet"
+                label = "photograph"
                 index = image["src"].rsplit("-", 1)[-1].split(".")[0]
                 image["alt"] = f"{name}, {label} {index}"
             ideas.append(

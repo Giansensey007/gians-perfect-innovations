@@ -220,7 +220,7 @@ p { text-wrap: pretty; }
 .listing-card img,
 .thumbs img { object-fit: cover; }
 
-.diashow-main img { object-fit: contain; }
+.diashow-main img { object-fit: cover; }
 
 .card-pitch { color: var(--ink); }
 
